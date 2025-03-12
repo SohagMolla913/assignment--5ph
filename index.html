@@ -24,9 +24,10 @@
           <div class="flex gap-3 items-center bg-[#F4F7FF] p-3 rounded-full">
             <img class="w-7 h-7" src="./assets/Group (1).png" alt="" />
 
-            <h2 class="font-bold text-3xl">23</h2>
+            <h2 id="task-count-p" class="font-bold text-3xl">23</h2>
           </div>
           <img
+            id="random-btn"
             class="w-12 h-12 bg-[#F4F7FF] rounded-full p-2"
             src="./assets/theme-btn.png"
             alt=""
@@ -48,7 +49,7 @@
             </div>
             <div>
               <h4 class="font-semibold">Task Assigned</h4>
-              <h1 class="text-4xl font-bold">05</h1>
+              <h1 id="task-count" class="text-4xl font-bold">05</h1>
             </div>
           </div>
           <!-- discover -->
@@ -76,11 +77,13 @@
           </div>
         </div>
         <!-- card section -->
-        <div class="mt-12 grid grid-cols-3 gap-6">
+        <div id="left-section" class="mt-12 grid grid-cols-3 gap-6">
           <div class="bg-[#F4F7FF] p-4 rounded-lg">
-            <div>
+            <div id="carderd">
               <p class="mb-6 bg-white w-24 p-2 rounded-lg">ShopEase</p>
-              <h1 class="font-bold mb-3 text-2xl">Fix Mobile Button Issue</h1>
+              <h1 id="hedding" class="font-bold mb-3 text-2xl">
+                Fix Mobile Button Issue
+              </h1>
               <p class="bg-white w-60 p-2 rounded-lg text-gray-400">
                 Debug using Chrome <br />
                 DevTools, check for overlappin
@@ -93,34 +96,18 @@
               </div>
               <button
                 id="btn"
-                class="bg-[#3752FD] text-white px-4 py-2 rounded-lg"
+                class="bg-[#3752FD] text-white px-4 py-2 rounded-lg btn"
               >
-                Clear History
+                Completed
               </button>
             </div>
           </div>
           <div class="bg-[#F4F7FF] p-4 rounded-lg">
-            <div>
+            <div id="carderd">
               <p class="mb-6 bg-white w-24 p-2 rounded-lg">CloudSync</p>
-              <h1 class="font-bold mb-3 text-2xl">Add Dark Mode</h1>
-              <p class="bg-white w-60 p-2 rounded-lg text-gray-400">
-                Store the user's preference in localStorage, update CSS varia
-              </p>
-            </div>
-            <div class="flex gap-11 mt-6">
-              <div>
-                <p>Deadline</p>
-                <h2>21 March 2025</h2>
-              </div>
-              <button class="bg-[#3752FD] text-white px-4 py-2 rounded-lg">
-                Clear History
-              </button>
-            </div>
-          </div>
-          <div class="bg-[#F4F7FF] p-4 rounded-lg">
-            <div>
-              <p class="mb-6 bg-white w-24 p-2 rounded-lg">SwiftPay</p>
-              <h1 class="font-bold mb-3 text-2xl">Optimize Home page </h1>
+              <h1 id="hedding" class="font-bold mb-3 text-2xl">
+                Add Dark Mode
+              </h1>
               <p class="bg-white w-60 p-2 rounded-lg text-gray-400">
                 Debug using Chrome <br />
                 DevTools, check for overlappin
@@ -131,15 +118,44 @@
                 <p>Deadline</p>
                 <h2>21 March 2025</h2>
               </div>
-              <button class="bg-[#3752FD] text-white px-4 py-2 rounded-lg">
-                Clear History
+              <button
+                id="btn"
+                class="bg-[#3752FD] text-white px-4 py-2 rounded-lg btn"
+              >
+                Completed
               </button>
             </div>
           </div>
           <div class="bg-[#F4F7FF] p-4 rounded-lg">
-            <div>
+            <div id="carderd">
+              <p class="mb-6 bg-white w-24 p-2 rounded-lg">Swift Pay</p>
+              <h1 id="hedding" class="font-bold mb-3 text-2xl">
+                Optimize Home page 
+              </h1>
+              <p class="bg-white w-60 p-2 rounded-lg text-gray-400">
+                Debug using Chrome <br />
+                DevTools, check for overlappin
+              </p>
+            </div>
+            <div class="flex gap-11 mt-6">
+              <div>
+                <p>Deadline</p>
+                <h2>21 March 2025</h2>
+              </div>
+              <button
+                id="btn"
+                class="bg-[#3752FD] text-white px-4 py-2 rounded-lg btn"
+              >
+                Completed
+              </button>
+            </div>
+          </div>
+          <div class="bg-[#F4F7FF] p-4 rounded-lg">
+            <div id="carderd">
               <p class="mb-6 bg-white w-24 p-2 rounded-lg">Meta</p>
-              <h1 class="font-bold mb-3 text-2xl">Add new emoji 🤲</h1>
+              <h1 id="hedding" class="font-bold mb-3 text-2xl">
+                Add new emoji 🤲
+              </h1>
               <p class="bg-white w-60 p-2 rounded-lg text-gray-400">
                 Debug using Chrome <br />
                 DevTools, check for overlappin
@@ -150,15 +166,20 @@
                 <p>Deadline</p>
                 <h2>21 March 2025</h2>
               </div>
-              <button class="bg-[#3752FD] text-white px-4 py-2 rounded-lg">
-                Clear History
+              <button
+                id="btn"
+                class="bg-[#3752FD] text-white px-4 py-2 rounded-lg btn"
+              >
+                Completed
               </button>
             </div>
           </div>
           <div class="bg-[#F4F7FF] p-4 rounded-lg">
-            <div>
+            <div id="carderd">
               <p class="mb-6 bg-white w-24 p-1 rounded-lg">Google LLC</p>
-              <h1 class="font-bold mb-3 text-2xl">Integrate OpenAI API</h1>
+              <h1 id="hedding" class="font-bold mb-3 text-2xl">
+                Integrate OpenAI API
+              </h1>
               <p class="bg-white w-60 p-2 rounded-lg text-gray-400">
                 Debug using Chrome <br />
                 DevTools, check for overlappin
@@ -169,15 +190,20 @@
                 <p>Deadline</p>
                 <h2>21 March 2025</h2>
               </div>
-              <button class="bg-[#3752FD] text-white px-4 py-2 rounded-lg">
-                Clear History
+              <button
+                id="btn"
+                class="bg-[#3752FD] text-white px-4 py-2 rounded-lg btn"
+              >
+                Completed
               </button>
             </div>
           </div>
           <div class="bg-[#F4F7FF] p-4 rounded-lg">
-            <div>
+            <div id="carderd">
               <p class="mb-6 bg-white w-24 p-2 rounded-lg">Glassdoar</p>
-              <h1 class="font-bold mb-3 text-2xl">mprove Job searching</h1>
+              <h1 id="hedding" class="font-bold mb-3 text-2xl">
+                Improve Job searching
+              </h1>
               <p class="bg-white w-60 p-2 rounded-lg text-gray-400">
                 Debug using Chrome <br />
                 DevTools, check for overlappin
@@ -188,14 +214,18 @@
                 <p>Deadline</p>
                 <h2>21 March 2025</h2>
               </div>
-              <button class="bg-[#3752FD] text-white px-4 py-2 rounded-lg">
-                Clear History
+              <button
+                id="btn"
+                class="bg-[#3752FD] text-white px-4 py-2 rounded-lg btn"
+              >
+                Completed
               </button>
             </div>
           </div>
         </div>
       </section>
-      <section class="w-3/12 bg-[#F4F7FF] rounded-lg">
+      <!-- Right-section -->
+      <section id="right-section" class="w-3/12 bg-[#F4F7FF] rounded-lg">
         <div class="md:px-36">
           <div class="flex gap-3 py-3">
             <img src="./assets/activity.png" alt="" />
@@ -210,5 +240,6 @@
 
     <!-- js link -->
     <script src="./script/task1.js"></script>
+    <script src="./script/task2.js"></script>
   </body>
 </html>
