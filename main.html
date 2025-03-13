@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/daisyui@5"
+      rel="stylesheet"
+      type="text/css"
+    />
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+  </head>
+  <body class="bg-[#F4F7FF] min-h-screen px-10 py-4">
+    <section class="">
+      <nav class="flex items-center justify-between bg-white rounded-lg px-4">
+        <div class="flex items-center gap-3 p-3 rounded-lg">
+          <img class="w-9" src="./assets/logo.png" alt="" />
+          <h1 class="text-xl">Dev<span class="font-bold">Board</span></h1>
+        </div>
+        <div class="flex gap-11 items-center">
+          <div
+            class="flex gap-3 items-center bg-[#3752FD] text-white p-3 rounded-lg"
+          >
+            <button id="back-btn" class="font-bold">Back to Desk</button>
+          </div>
+        </div>
+      </nav>
+      <div><h1 class="text-center mt-7 font-bold text-3xl">Blogs</h1></div>
+    </section>
+    <!-- section 2 -->
+    <section>
+      <div>
+        <h1 class="bg-white text-2xl font-bold p-3 mt-6 rounded-lg">
+          Question-1:What are the different ways to select an element in the
+          Dom?
+        </h1>
+        <p class="bg-white mt-2 p-2 rounded-lg text-gray-400">
+          Use getElementById if selecting one unique element. Use
+          getElementsByClassName or querySelectorAll for multiple elements. Use
+          querySelector for flexibility with CSS selector
+        </p>
+      </div>
+      <div>
+        <h1 class="bg-white text-2xl font-bold p-3 mt-6 rounded-lg">
+          Question-2:What is the different between innerHTML,innerText and
+          textContent?
+        </h1>
+        <p class="bg-white mt-2 p-2 rounded-lg text-gray-400">
+          Use innerHTML if i need HTML formatting. Use innerText if i want only
+          visible text. Use textContent if i want all text, even hidden ones.
+        </p>
+      </div>
+      <div>
+        <h1 class="bg-white text-2xl font-bold p-3 mt-6 rounded-lg">
+          Question-3:What is event delegration in the Dom?
+        </h1>
+        <p class="bg-white mt-2 p-2 rounded-lg text-gray-400">
+          When handling many child elements. When working with dynamic content
+          (new elements added later).
+        </p>
+      </div>
+      <div>
+        <h1 class="bg-white text-2xl font-bold p-3 mt-6 rounded-lg">
+          Question-4:What is event bubbling in the Dom?
+        </h1>
+        <p class="bg-white mt-2 p-2 rounded-lg text-gray-400">
+          When i need events to reach parent elements. When using Event
+          Delegation.
+        </p>
+      </div>
+    </section>
+    <script>
+      document
+        .getElementById("back-btn")
+        .addEventListener("click", function () {
+          window.location.href = "index.html";
+        });
+    </script>
+  </body>
+</html>
