@@ -70,10 +70,8 @@
             <div>
               <img src="./assets/calender.png" alt="" />
             </div>
-            <div>
-              <h1>date</h1>
-              <p>Lorem ipsum, dolor sit</p>
-            </div>
+            <div id="currentDay" class="day text-[16px]"></div>
+            <div class="font-bold text-xl" id="currentDate" class="date"></div>
           </div>
         </div>
         <!-- card section -->
@@ -225,13 +223,20 @@
         </div>
       </section>
       <!-- Right-section -->
-      <section id="right-section" class="w-3/12 bg-[#F4F7FF] rounded-lg">
+      <section
+        id="right-section"
+        id="reserveData"
+        class="w-3/12 bg-[#F4F7FF] rounded-lg"
+      >
         <div class="md:px-36">
           <div class="flex gap-3 py-3">
             <img src="./assets/activity.png" alt="" />
             <h3>Activity Log</h3>
           </div>
-          <button class="bg-[#3752FD] text-white px-4 py-2 rounded-lg">
+          <button
+            onclick="clearReserveData()"
+            class="bg-[#3752FD] text-white px-4 py-2 rounded-lg"
+          >
             Clear History
           </button>
         </div>
@@ -241,5 +246,6 @@
     <!-- js link -->
     <script src="./script/task1.js"></script>
     <script src="./script/task2.js"></script>
+    <script src="./script/task3.js"></script>
   </body>
 </html>
